@@ -1,0 +1,15 @@
+{
+	"name": "Schedule",
+	"properties": {
+		"runtimeState": "Stopped",
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2019-06-12T10:14:00.000Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
