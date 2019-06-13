@@ -1,0 +1,9 @@
+{
+	"name": "LS_AKV_Serviece01",
+	"properties": {
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://AZK-RABUZU-LAB01-CORE-S1.vault.azure.net/"
+		}
+	}
+}
