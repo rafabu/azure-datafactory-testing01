@@ -1,7 +1,0 @@
-{
-	"name": "DataDestinationStore1",
-	"properties": {
-		"description": "Connection to your Azure Data Lake Store.",
-		"type": "AzureBlobFSFile"
-	}
-}
