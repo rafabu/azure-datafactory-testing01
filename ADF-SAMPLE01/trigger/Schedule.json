@@ -2,14 +2,6 @@
 	"name": "Schedule",
 	"properties": {
 		"runtimeState": "Stopped",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "CopyData_from_Amazon_S3_to_AzureDataLakeStorage1",
-					"type": "PipelineReference"
-				}
-			}
-		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
