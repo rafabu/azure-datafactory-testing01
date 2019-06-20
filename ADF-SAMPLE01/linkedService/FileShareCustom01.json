@@ -1,0 +1,22 @@
+{
+	"name": "FileShareCustom01",
+	"properties": {
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "\\\\asarabuzulab01cores1.file.core.windows.net\\custom01",
+			"userId": "Azure\\asarabuzulab01cores1",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AKV_Serviece01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "asarabuzulab01cores1"
+			}
+		},
+		"connectVia": {
+			"referenceName": "Azure-IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

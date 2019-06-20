@@ -1,0 +1,19 @@
+{
+	"name": "AmazonS31",
+	"properties": {
+		"type": "AmazonS3",
+		"typeProperties": {
+			"serviceUrl": "https://s3.aws.com/rabuzu",
+			"accessKeyId": "asiodhasdklfhok23klasjdkljaldfkjlkasdfj",
+			"secretAccessKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AKV_Serviece01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "S3Token"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
+}

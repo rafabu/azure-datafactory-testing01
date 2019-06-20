@@ -1,0 +1,17 @@
+{
+	"name": "Azure-IR",
+	"properties": {
+		"type": "Managed",
+		"description": "Azure-IR",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "West Europe",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLiveInMinutes": 60
+				}
+			}
+		}
+	}
+}
