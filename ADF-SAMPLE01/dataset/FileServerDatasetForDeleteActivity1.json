@@ -1,0 +1,27 @@
+{
+	"name": "FileServerDatasetForDeleteActivity1",
+	"properties": {
+		"description": "Connect to your storage store to delete files.",
+		"linkedServiceName": {
+			"referenceName": "FileSHareDestination01",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FolderPath": {
+				"type": "String"
+			}
+		},
+		"type": "FileShare",
+		"typeProperties": {
+			"fileName": "*",
+			"folderPath": {
+				"value": "@dataset().FolderPath",
+				"type": "Expression"
+			},
+			"modifiedDatetimeEnd": {
+				"value": "@adddays(pipeline().TriggerTime, -30)",
+				"type": "Expression"
+			}
+		}
+	}
+}
